@@ -1,20 +1,38 @@
 class User
 
   attr_accessor :wins, :losses
-  attr_reader :name, :special_code
+  attr_reader :username
 
   @@all = []
 
-  def initialize(name, special_code)
-    @name = name.downcase
-    @special_code = special_code.downcase
+  def initialize(username)
+    @username = username
     @wins = 0
     @losses = 0
     @@all << self
   end
 
-  def self.check_existence(name, special_code)
-    @@all.find {|user| user.name.downcase == name.downcase && user.special_code.downcase == special_code.downcase}
+  def self.all
+    @@all
+  end
+
+  def self.check_existence(username)
+    self.all.find {|user| user.username.downcase == username.downcase}
+  end
+
+  def self.usernames
+    self.all.collect { |user| user.username}
+  end
+
+  def individual_score
+    @wins.to_f / (@wins.to_f + @losses.to_f) * 100.0
+  end
+
+  def self.scoreboard
+    puts "Username: Wins, Losses, Scores"
+    self.all.each do |user|
+      puts "#{user.username}: #{user.wins}, #{user.losses}, #{user.individual_score.floor}%" 
+    end
   end
 
 end

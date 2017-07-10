@@ -1,7 +1,5 @@
 '#!/usr/bin/env ruby'
-require_relative '../app/models/hangman.rb'
-require_relative '../app/models/user.rb'
-require_relative '../app/models/word.rb'
+require_relative '../config/environment.rb'
 
 
 game = Hangman.new
