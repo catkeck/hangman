@@ -11,14 +11,6 @@ To get started with the game, first make a pull request via GitHub to access the
 3. When you are inside the directory, run the game by typing ruby bin/run.rb.
 4. You have 6 guesses and once they run out, you'll be dead!
 
-_ _ _ _ _ __
-|          |
-|          o
-|         /|\
-|         / \
-|    
-
-
 ### Building Hangman ###
 
 There are 3 classes: Hangman, Word, and User.
