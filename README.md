@@ -24,7 +24,7 @@ _ _ _ _ _ __
 There are 3 classes: Hangman, Word, and User.
 
 1. Word
-  ** Word class is initialized with an array of values that include guess words. To obtain a random element from an array, use .sample.
+  - Word class is initialized with an array of values that include guess words. To obtain a random element from an array, use .sample.
 
 2. User
   - User class is initialized with the username, wins and losses. The method will also store the user info at initialization.
