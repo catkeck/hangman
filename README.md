@@ -11,7 +11,7 @@ To get started with the game, first make a pull request via GitHub to access the
 3. When you are inside the directory, run the game by typing ruby bin/run.rb.
 4. You have 6 guesses and once they run out, you'll be dead!
 
-____________
+_ _ _ _ _ __
 |          |
 |          o
 |         /|\
@@ -27,24 +27,24 @@ There are 3 classes: Hangman, Word, and User.
   ** Word class is initialized with an array of values that include guess words. To obtain a random element from an array, use .sample.
 
 2. User
-  ** User class is initialized with the username, wins and losses. The method will also store the user info at initialization.
+  - User class is initialized with the username, wins and losses. The method will also store the user info at initialization.
 
- ** User class should be able to store usernames, individual score, and the scoreboard. It should also check if a username is already in use.
+ - User class should be able to store usernames, individual score, and the scoreboard. It should also check if a username is already in use.
 
 3. Hangman
-  ** Initialize the Hangman class with the number of incorrect guesses, guessed letters, current user, new user, the hangman board, and a new word.
+  - Initialize the Hangman class with the number of incorrect guesses, guessed letters, current user, new user, the hangman board, and a new word.
 
- ** If the user has played the game before, ask for the username. If the user is new, create a username. Redirect the user if their input is invalid.
+ - If the user has played the game before, ask for the username. If the user is new, create a username. Redirect the user if their input is invalid.
 
- ** Get guess from the user and display their guesses. If the guess is incorrect, increase the incorrect guess by 1.
+ - Get guess from the user and display their guesses. If the guess is incorrect, increase the incorrect guess by 1.
 
- ** Check if the word has been completed by the guesses and end the game.
+ - Check if the word has been completed by the guesses and end the game.
 
- ** For every incorrect guess, a body part of the man should appear.
+ - For every incorrect guess, a body part of the man should appear.
 
- ** At the end of the game, provide the score for the current user and an option to view the scoreboard that includes the scores for all users. A message should appear indicating whether the user has won or lost the game.
+ - At the end of the game, provide the score for the current user and an option to view the scoreboard that includes the scores for all users. A message should appear indicating whether the user has won or lost the game.
 
- ** Build a separate Hangman#play_game method that executes the above methods.
+ - Build a separate Hangman#play_game method that executes the above methods.
 
 
 ### Making Edits ###
